@@ -1,0 +1,42 @@
+/* Grid container for the time capsules */
+.capsule-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Individual capsule card */
+  .capsule-card {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #00ffc6;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 255, 198, 0.3);
+    color: #fff;
+  }
+  
+  .capsule-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .capsule-card p {
+    margin-bottom: 10px;
+  }
+  
+  .capsule-card button {
+    background-color: #00ffc6;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .capsule-card button:hover {
+    background-color: #00d6a3;
+  }
+  

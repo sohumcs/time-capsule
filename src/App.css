@@ -1,38 +1,153 @@
+/* Futuristic Gradient Background */
+/* Futuristic Gradient Background */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-image: url("C:/Users/Sohum Srivastava/Desktop/time-capsule/time-capsule/public/bg-picture.jpg"); /* Smooth dark futuristic gradient */
+  min-height: 100%;
+  overflow-y: auto;
+  color: #00ffc6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+
+/* Container styling */
 .App {
+  position: relative;
   text-align: center;
+  padding: 20px;
+  width: 400px; /* Smaller size for the form */
+  background: rgba(0, 0, 0, 0.7); /* Dark translucent background for form */
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 255, 198, 0.5);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Social icons at the top left */
+/* Social icons on the left side */
+.social-icons-vertical {
+  position: fixed;
+  top: 10%;
+  left: 20px;
+  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.social-icons-vertical a {
+  color: #00ffc6;
+  margin-bottom: 20px;
+  font-size: 30px;
+  transition: color 0.3s;
 }
 
-@keyframes App-logo-spin {
+.social-icons-vertical a:hover {
+  color: #00d6a3;
+}
+
+/* Futuristic Heading */
+h1 {
+  font-size: 2rem;
+  color: #00ffc6;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  animation: pulseGlow 2s infinite alternate;
+}
+
+@keyframes pulseGlow {
   from {
-    transform: rotate(0deg);
+    text-shadow: 0 0 10px #00ffc6, 0 0 20px #00ffc6, 0 0 30px #00ffc6, 0 0 40px #00ffc6;
   }
   to {
-    transform: rotate(360deg);
+    text-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc, 0 0 40px #00ffcc, 0 0 50px #00ffcc;
+  }
+}
+
+/* Time Capsule Form */
+form {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 255, 198, 0.5);
+  margin-bottom: 30px;
+}
+
+label {
+  font-size: 1rem;
+  color: #00ffc6;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: rgba(15, 15, 15, 0.9);
+  border: 2px solid #00ffc6;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: inset 0px 0px 10px rgba(0, 255, 198, 0.3);
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #00ffe4;
+  box-shadow: 0 0 10px #00ffc6;
+}
+
+/* Buttons */
+button {
+  background-color: #00ffc6;
+  color: #0f0f0f;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+button:hover {
+  background-color: #00ffe4;
+  color: #000;
+  box-shadow: 0px 0px 15px #00ffc6, 0px 0px 25px #00ffc6;
+}
+
+/* Time Capsule List */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  background-color: rgba(15, 15, 15, 0.9);
+  border: 1px solid #00ffc6;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 255, 198, 0.2);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .App {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 8px 16px;
   }
 }
