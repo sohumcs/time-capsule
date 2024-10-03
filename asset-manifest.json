@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/time-capsule/static/css/main.cc0f6643.css",
+    "main.js": "/time-capsule/static/js/main.cc5713dc.js",
+    "static/media/bg-picture.jpg": "/time-capsule/static/media/bg-picture.90816ac2551f468bcc87.jpg",
+    "index.html": "/time-capsule/index.html",
+    "main.cc0f6643.css.map": "/time-capsule/static/css/main.cc0f6643.css.map",
+    "main.cc5713dc.js.map": "/time-capsule/static/js/main.cc5713dc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc0f6643.css",
+    "static/js/main.cc5713dc.js"
+  ]
+}
